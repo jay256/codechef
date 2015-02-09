@@ -1,0 +1,14 @@
+Storage Management Initiative Specifications and EMC ViPR SRM's Collecting and Alerting Modules
+
+Storage Resource Management Automation
+
+Learn about the Storage Management Initiative Specifications. Learn about EMC ViPR SRM's architecture and work on the collecting and alerting modules. Implement Stream Collector for IBM-XIV and IBM-DS Solution Packs. Implement Alert Consolidation block for IBM-XIV. Add features for Network Adapter statistics in Physical Host Solution Pack.
+
+ Improvement in the productivity and efficiency of the product & services
+
+Learnt about various protocols and standards used for Data Center device communication and managing these devices(WinRM, WSMAN, SMI-S, CIM, SNMP, FCoE). Learnt about virtualization and the cloud infrastructure. Learnt about the SAN environment, XIV and DS arrays and various hosts running Solaris, Windows, AIX, HPUX or Linux OS. While developing features for the Physical Host SP, learnt about Fibre Channel over Ethernet(FCoE), Converged Net Infrastructure(CNI) and Converged Network Adapters(CNA). Learnt about product development and scalability issues that can arise. Worked on EMC ViPR SRM product and learnt about its architecture and developed features for it. Used XML, XPath, Perl, PowerShell to implement the required changes successfully.
+
+Stream Collector is a new method of collection being deployed in ViPR SRM to address scalability issues and bring greater amount of parallelism and modularity. Learning about it and implementing for XIV and DS SPs was necessary and after gaining knowledge about it, the team also benefited after a WebEx session. It also helped in improving the quality of the product.
+Adding feature for collecting Network Adapter statistics was also important as it provided greater visibility into the end-to-end topology of the data center. Also, it facilitates monitoring network traffic. It is a feature required for a future release of the product.
+
+The organization is working on some good projects and have good prospects of research. If the right people talk there is always scope for collaboration and students on campus will also benefit by working on some cutting edge technologies.

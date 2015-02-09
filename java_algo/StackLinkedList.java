@@ -1,0 +1,60 @@
+import java.lang.*;
+import java.util.*;
+import java.io.*;
+
+class Node<T>{
+	T data;
+	Node next;
+	Node(){
+		//top=null;
+	}
+	Node(T data){
+		this.data = data;
+	}
+}
+
+class MyLLStack<T>{
+	private Node<T> top;
+	MyLLStack(T t){
+		top=new Node<T>(t);
+		top.next=null;
+	}
+	public void push(T t){
+		Node<T> n=new Node<T>(t);
+		n.data=t;
+		n.next=top;
+		top=n;		
+	}
+	public T pop() throws Exception{
+		if(this.isEmpty())
+			throw new Exception();
+		else{
+			Node<T> n;
+			n = top;
+			top = top.next;
+			return n.data;
+		}
+	}
+	public boolean isEmpty(){
+		if(this.top.equals(null))
+			return true;
+		return false;
+	}
+}
+
+public class StackLinkedList{
+	public static void main(String [] args) throws Exception{
+		MyLLStack<String> stack=new MyLLStack<String>("Hello");
+		stack.push("Munna");
+		stack.push("Jazbaati");
+		stack.push("Kaisa");
+		stack.push("Hai");
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		stack.push("Hai");
+		System.out.println(stack.pop());
+	}
+}

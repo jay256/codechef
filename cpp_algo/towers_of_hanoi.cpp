@@ -1,0 +1,20 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+enum tower {A='A', B='B', C='C'};
+
+void towers_of_hanoi(int n, tower x, tower y, tower z){
+  if(n){
+    towers_of_hanoi(n-1,x,z,y);
+    cout << "move top disk from tower " << char(x) << " to top of tower " << char(y) << endl;
+    towers_of_hanoi(n-1,z,y,x);
+  }
+}
+
+int main(){
+  towers_of_hanoi(3,A,B,C);
+  return 0;
+}

@@ -1,0 +1,50 @@
+import java.lang.*;
+import java.util.*;
+import java.io.*;
+
+class MyStack<T>{
+    private Vector<T> elements;
+    private int top;
+    
+    public MyStack(){
+        elements = new Vector<T>();
+        top=-1;
+    }
+    
+    public void push(T t){
+        elements.add(t);
+        top++;
+    }
+    
+    public T pop() throws Exception{
+        if(elements.isEmpty())
+            throw new Exception();
+        else{
+           return elements.remove(top--);
+           //top--; 
+        }
+    }
+
+    public T top() throws Exception{
+        if(elements.isEmpty())
+            throw new Exception();
+        else{
+           return elements.get(top);
+        }
+    }
+}
+
+public class StackArray{
+	public static void main(String [] args) throws Exception{
+        MyStack<String> stack=new MyStack<String>();
+        stack.push("I");
+        stack.push("am");
+        stack.push("a");
+        stack.push("boy");
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+    }
+}
